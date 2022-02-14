@@ -1,0 +1,19 @@
+{ 
+    "name": "b站修改器",
+    "manifest_version": 3,
+    "version": "2.0",
+    "description": "播放量点赞量粉丝数你要多少就有多少",
+    "browser_action": { 
+        "default_icon": "1.png" 
+    },
+    "permissions": [
+        "tabs", "http://*/*","https://*/*"
+    ],
+    "content_scripts": [ 
+        { 
+            "matches": ["https://space.bilibili.com/*","https://www.bilibili.com/video/*"],
+            "js": ["jquery.min.js","yasuo.js"]
+        }
+    ] 
+} 
+
